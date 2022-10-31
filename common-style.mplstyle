@@ -1,0 +1,9 @@
+font.sans-serif: Geomanist, DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
+font.monospace:  Consolas, sDejaVu Sans Mono, Bitstream Vera Sans Mono, Computer Modern Typewriter, Andale Mono, Nimbus Mono L, Courier New, Courier, Fixed, Terminal, monospace
+
+axes.facecolor: GhostWhite
+figure.facecolor: GhostWhite
+savefig.facecolor: GhostWhite
+
+
+axes.prop_cycle: cycler('color', ['4281a4','08a045','fe5d9f','320e3b','ffa630'])
