@@ -50,7 +50,7 @@ for i, ax in enumerate(flat_axes):
     ax.bar(x=['A', 'B', 'C', 'D'], height=[76, 263, -142, 84], zorder=2)
 
 flat_axes[0].annotate(
-    "fig, ax = plt.subplots()\nax.bar(\n    x=['A', 'B', 'C', 'D'],\n    height=[142, 263, -76, 84],\n    zorder=2\n)",
+    "import matplotlib.pyplot as plt\nfig, ax = plt.subplots()\nax.bar(\n    x=['A', 'B', 'C', 'D'],\n    height=[142, 263, -76, 84],\n    zorder=2\n)",
     xy=(0, 1), xycoords='axes fraction', xytext=(10, 15),
     ha='left', va='bottom',
     **ANNOTATION_PROPS
@@ -171,6 +171,13 @@ flat_axes[8].annotate(
 
 fig.suptitle(
     'How to...\nstyle a simple bar plot in matplotlib', size=35, weight='bold',
+)
+
+ax.annotate(
+    'For more information (and copyable code!), go to\nruszkow.ski/graphs/2022-11-01-basic-matplotlib-bar-plot-styling',
+    xy=(1, 0), xycoords='figure fraction', 
+    xytext=(-20, 20), textcoords='offset pixels',
+    ha='right', va='baseline', size=12
 )
 
 plt.savefig(Path(__file__).with_suffix('.png'))
